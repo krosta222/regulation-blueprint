@@ -1,0 +1,920 @@
+import { useState } from "react";
+const courseData = {
+title: "The Regulation Blueprint™",
+subtitle: "Type 01: The Stabilizer",
+tagline: "You were never the problem. You were the solution to a problem that shouldn't hav
+modules: [
+{
+id: 1,
+title: "The Architecture of You",
+subtitle: "Understanding How This Adaptation Was Born",
+color: "#C8A882",
+icon: "◈",
+theme: "Origin",
+description: "Before we can shift anything, we must first see it with clarity — and wit
+coreWound: "Premature responsibility. You learned that rest was a risk, and reliability
+coreFear: "If I stop managing, something important will fall apart — and that will be m
+coreBeliefs: [
+"If things are organized, I can exhale.",
+"Rest must be earned.",
+"If I stop, something will be missed.",
+"I am only as safe as what I manage."
+],
+developmentalContext: "The Stabilizer's strategy emerged from environments where lessons: [
+"The Nervous System as Author: How your body wrote this strategy",
+"Mapping Your Origin Story: The environment that required this of you",
+"Naming the Gift: What this strategy genuinely gave you",
+"The Cost Beneath the Competence: What was quietly traded away"
+reliab
+],
+journalingPrompts: [
+"Who needed you to be reliable before you were ready? What did that feel like in your
+"When did you first learn that managing things made you feel safer? What was happenin
+"What would have happened — or what did you fear would happen — if you had stopped ma
+"If your younger self could speak about the load they were carrying, what would they
+"What did 'rest' mean in your household growing up? Was it available? Was it safe?"
+],
+reflectionExercises: [
+{
+name: "The Origin Map",
+desc: "Draw or write a map of your early environment. Where was the chaos? Where we
+},
+{
+name: "The Competence Timeline",
+desc: "List five moments in your life where your ability to manage things genuinely
+},
+{
+name: "Letter from the Child",
+desc: "Write a short letter from your younger self to your present self — from the
+}
+],
+audioIdea: "Guided visualization: Return to the origin. You are led back to the environ
+embodimentPractice: "The Weight Inventory. Stand and notice: where is your body braced
+breakthrough: "The moment a student says: 'I wasn't controlling — I was terrified.' The
+resistance: "Many Stabilizers resist the 'victim' framing they fear comes with looking
+},
+{
+id: 2,
+title: "The Body That Braces",
+subtitle: "Reading Your Nervous System's Native Language",
+color: "#8B9E8A",
+icon: "◉",
+theme: "Soma",
+description: "Your body has been keeping score — not against you, but for you. This mod
+coreWound: "The body that was never allowed to rest. The exhale that was always postpon
+coreFear: "If I let my body relax, something will slip. If something slips, I failed.",
+coreBeliefs: [
+"Physical tension means I'm on top of things.",
+"Relaxation is irresponsible.",
+"My body's needs are less urgent than the list.",
+"If I feel tired, I push through."
+],
+developmentalContext: "Chronic low-grade sympathetic activation masked as competence. T
+lessons: [
+"The Stabilizer's Somatic Map: Jaw, shoulders, back, breath",
+"The Difference Between Bracing and Being: Learning to feel the distinction",
+"Completion as Regulation Signal: Why finishing things regulates your nervous system"
+"The Burnout Architecture: How shutdown happens slowly, then all at once"
+],
+journalingPrompts: [
+"When you imagine putting everything down — all responsibilities, all oversight — wha
+"Where do you carry tension you don't notice until someone points it out?",
+"What does your breath do when something goes unfinished?",
+"When was the last time your body felt genuinely at rest — not earned rest, but real
+"What does your body try to tell you that your mind overrides?"
+],
+reflectionExercises: [
+{
+name: "The Body Audit",
+desc: "Three times today, pause and scan: jaw — shoulders — breath — hands. No fixi
+},
+{
+name: "Mapping Your Window",
+desc: "Draw a dial from 'regulated' to 'overwhelmed.' Where do you spend most of yo
+},
+{
+name: "The Completion Experiment",
+desc: "Complete one small task today — just one — and then stop. Notice the specifi
+}
+],
+audioIdea: "Body scan for the Stabilizer. A somatic journey specifically written for th
+embodimentPractice: "The Exhale Practice. After completing any task — even small — plac
+breakthrough: "The student who realizes their jaw has been clenched for years. The mome
+resistance: "Stabilizers often try to 'do' the somatic practices correctly — to be good
+},
+{
+id: 3,
+title: "The Invisible Load",
+subtitle: "Mapping What You Carry and What Was Never Yours",
+color: "#9B8BAF",
+icon: "◎",
+theme: "Inventory",
+description: "You have been carrying things no one assigned you, things you picked up a
+coreWound: "The belief that if you don't hold it, it will collapse. That your managemen
+coreFear: "If I set something down, I'll prove I was never really in control.",
+coreBeliefs: [
+"If I don't manage this, no one will.",
+"It's faster to do it myself.",
+"Delegation is a risk I can't afford.",
+"Unfinished things are failures."
+],
+developmentalContext: "Over-functioning is not a personality trait — it is a nervous sy
+lessons: [
+"The Visible and Invisible Load: What others see and what they don't",
+"The Ownership Audit: What is genuinely yours versus what you absorbed",
+"Delegation as a Nervous System Challenge: Why handing off feels like risk",
+"The Resentment Beneath the Competence: What builds when the load isn't shared"
+],
+journalingPrompts: [
+"List everything you are currently managing — in every domain of your life. All of it
+"What do you fear will happen if you hand something to someone else and they don't ha
+"Where in your life do you feel resentment about how much you carry? What have you ne
+"What would you need to believe about other people to trust them with something that
+"If someone took something off your plate without being asked, what would your first
+],
+reflectionExercises: [
+{
+name: "The Load Inventory",
+}
+],
+audioIdea: "Guided release visualization. You are standing in a room with everything yo
+embodimentPractice: "Shoulder drop practice. While standing or seated, bring your shoul
+breakthrough: "The student who realizes they've been managing their partner's emotions,
+resistance: "Stabilizers may resist the resentment exercise — it feels like ingratitude
+},
+{
+desc: "List every domain you are managing: home, work, relationship, family, emotio
+},
+{
+name: "The 10% Reduction Experiment",
+desc: "Identify one thing you are managing that you could reduce by 10% — not elimi
+},
+{
+name: "The Resentment Ledger",
+desc: "Write — without editing — everything you give that doesn't come back. This i
+id: 4,
+title: "Relationships Held at Arm's Length",
+subtitle: "What Intimacy Looks Like When You're the One Holding Everything Together",
+color: "#B08888",
+icon: "◑",
+theme: "Connection",
+description: "The Stabilizer loves through managing. This module explores what that cos
+coreWound: "Conditional presence. Being valued for what you do, not for who you are.",
+coreFear: "If I stop being useful, I will no longer be loved. If I show a need, I becom
+coreBeliefs: [
+"Love is best expressed through doing.",
+"Needing something makes me a problem.",
+"If I am vulnerable, I will be left.",
+"I must earn my place in relationships."
+],
+developmentalContext: "The Stabilizer's relational template was built in environments w
+lessons: [
+"Service as Love Language and Armor: The difference matters",
+"What Partners, Children, and Colleagues Actually Experience",
+"The Vulnerability Equation: Why need feels like exposure",
+"Receiving Without Redirecting: The practice of letting care in"
+],
+journalingPrompts: [
+"How do the people closest to you experience you? What do you think they would say if
+"When someone offers you care, what is your first impulse? What happens in your body?
+"Have you ever let yourself be soft with someone — truly soft — without it costing yo
+"What would it mean to you to be loved for who you are rather than what you manage?",
+"What do you need in relationships that you have never asked for?"
+],
+reflectionExercises: [
+}
+],
+audioIdea: "Relational visualization: A guided meditation in which you imagine being in
+embodimentPractice: "The receiving breath. When someone offers you something — care, a
+breakthrough: "The student who, for the first time, asks for something without justifyi
+resistance: "Stabilizers often frame vulnerability as 'burdening people.' Gently challe
+},
+{
+{
+name: "The Receiving Practice",
+desc: "For one week, when someone offers help — a compliment, an act of kindness, a
+},
+{
+name: "The Intimacy Gap Map",
+desc: "In your primary relationships, map what you offer (service, management, reli
+},
+{
+name: "Asking for One Thing",
+desc: "Identify one genuine need — not a practical request, but an emotional one —
+id: 5,
+title: "The Stress Spiral",
+subtitle: "Understanding Your Escalation Pattern Before It Runs the Show",
+color: "#7B8FA8",
+icon: "◐",
+theme: "Stress",
+description: "The Stabilizer's stress loop is sophisticated — it looks like competence
+coreWound: "The body that never learned it was safe to stop.",
+coreFear: "If I slow down now, everything I've managed will unravel.",
+coreBeliefs: [
+"More management equals more safety.",
+"When things get hard, I get more organized.",
+"The answer to overwhelm is more control.",
+"If I'm not managing, I'm failing."
+],
+developmentalContext: "The four-stage stress loop: Adaptive Activation → Over-Activatio
+lessons: [
+"Mapping Your Four Stages: What each one looks and feels like",
+"The Escalation Signals: Your personal early warning system",
+"Why the Solution Becomes the Problem: When management stops working",
+"Exit Ramps: Interrupting the loop at each stage"
+],
+journalingPrompts: [
+"Describe the last time you entered the stress spiral. When did you notice? What stag
+"What are your earliest warning signs that you are entering over-activation? What do
+"When you are in Stage 3 — compulsive management — what does your behavior look like
+"Have you experienced Stage 4 shutdown? What did it feel like? What forced it?",
+"What would have to be true for you to exit the loop earlier?"
+},
+{
+name: "The Early Warning List",
+desc: "Identify your three earliest signals that you are entering over-activation.
+},
+{
+name: "Exit Ramp Design",
+desc: "For each stage of the loop, design one thing you can do to interrupt it. The
+}
+],
+audioIdea: "Nervous system reset audio for mid-spiral use. A short (8-10 minute) audio
+embodimentPractice: "The physiological sigh. Two quick inhales through the nose, follow
+breakthrough: "The student who catches themselves in Stage 2 and consciously chooses no
+resistance: "Stabilizers may want to manage their way out of the stress spiral — by imp
+},
+{
+],
+reflectionExercises: [
+{
+name: "Your Stress Spiral Map",
+desc: "Draw your personal version of the four stages. For each stage, write: What t
+id: 6,
+title: "The Emergency Stop",
+subtitle: "Understanding Shutdown Before It Becomes the Only Option",
+color: "#8A9E9E",
+icon: "◊",
+theme: "Shutdown",
+description: "The Stabilizer's burnout is a delayed and distinctive collapse — the body
+coreWound: "The belief that voluntary rest is not an option — only mandatory collapse."
+coreFear: "If my body stops, it means I failed. If I burned out, I wasn't strong enough
+coreBeliefs: [
+"Real stopping is weakness.",
+"Burnout happens to people who couldn't handle it.",
+"If I rest before collapse, I'm being lazy.",
+"I should be able to handle more."
+],
+developmentalContext: "The Stabilizer's shutdown is burnout-style: not acute freeze but
+lessons: [
+"The Architecture of Stabilizer Burnout: Why it happens this way",
+"Shame and Shutdown: Why burnout feels like failure",
+"The Body's Intelligence: What the collapse is actually trying to do",
+"Voluntary Stopping as Advanced Skill: The practice of rest before crash"
+],
+journalingPrompts: [
+"Have you experienced burnout? What did it look like? What finally forced the stop?",
+"How did you interpret your burnout at the time — as failure, weakness, inadequacy?",
+"What would it mean if the burnout was actually your body doing the most intelligent
+"What would voluntary rest look like in your life — not earned rest, but rest as a no
+"What are you afraid will happen if you rest before you're forced to?"
+],
+reflectionExercises: [
+{
+name: "The Burnout Debrief",
+desc: "If you've experienced burnout, write its story with compassion: what precede
+},
+{
+name: "The Rest Protocol",
+desc: "Design a rest protocol — not as a reward system but as a structural requirem
+},
+{
+name: "Permission Slip",
+desc: "Write yourself a formal permission slip to rest today — not because you've e
+}
+],
+audioIdea: "Restoration audio for post-depletion states. A very slow, very gentle audio
+embodimentPractice: "Restorative stillness. Lie down — not to sleep, but to be still. S
+breakthrough: "The student who rests before they have to — and discovers the world does
+resistance: "The reframe from burnout-as-failure to burnout-as-intelligence is often de
+},
+{
+id: 7,
+title: "The Emotional Blind Spots",
+subtitle: "What Gets Lost When Everything Must Be Efficient",
+color: "#B09B7A",
+icon: "◌",
+theme: "Emotion",
+description: "Emotions that aren't useful get managed quickly. The Stabilizer's emotion
+coreWound: "Emotions were a luxury — or a liability. Learning to feel quickly and move
+coreFear: "If I feel this fully, I won't be able to function. If I grieve, I won't be a
+coreBeliefs: [
+"I don't have time to feel that right now.",
+"Getting emotional means losing control.",
+"Processing my feelings is self-indulgent.",
+"I can feel it later — after everything is handled."
+],
+developmentalContext: "The Stabilizer's emotional processing is efficient by design — f
+lessons: [
+"The Emotional Efficiency Strategy: How it developed and what it costs",
+"The Bypassed Emotions: Grief, longing, vulnerability, softness",
+"From Feeling-to-Action to Feeling-as-Enough: A new relationship with emotion",
+"Emotional Permission: What the Stabilizer was never given and can now grant themselv
+],
+journalingPrompts: [
+"When you feel something difficult — sadness, fear, grief — what is your immediate im
+"When was the last time you cried fully — not performed tears, but genuine grief? Wha
+"What emotions feel 'acceptable' to you? Which feel dangerous or weak?",
+"If you allowed yourself to feel something you've been routing around, what would it
+"What would it mean to feel something without it requiring action?"
+],
+reflectionExercises: [
+{
+name: "The Emotion Inventory",
+desc: "Map your emotional access: which emotions do you have ready access to? Which
+},
+{
+name: "The Sit With It Practice",
+desc: "Choose one feeling you typically route quickly into action. Set a timer for
+},
+{
+name: "Grief Acknowledgment",
+desc: "Write about one loss in your life you've never fully grieved — because there
+}
+],
+audioIdea: "Emotional permission audio. A guided experience that specifically grants th
+embodimentPractice: "The hand on the heart practice. Place your right hand on your ches
+breakthrough: "The student who cries in a module and then apologizes for it — and then
+resistance: "Stabilizers often intellectualize emotional experiences — analyzing feelin
+},
+{
+id: 8,
+title: "Healing and Coming Home",
+subtitle: "Integration, Rest as a Right, and the Return of Yourself",
+color: "#8BA88B",
+icon: "◈",
+theme: "Integration",
+description: "This is not the end of the work — it is the beginning of a different rela
+coreWound: "The belief that there is no version of you that is both competent and at re
+coreFear: "If I change, I will lose the thing that has kept me safe.",
+coreBeliefs: [
+"My worth is conditional on my function.",
+"Rest and reliability cannot coexist.",
+"If I need, I am weak.",
+"Integration means giving up what I built."
+],
+developmentalContext: "Integration for the Stabilizer is not about dismantling what the
+lessons: [
+"Your Gifts in Their Regulated Form: What you offer when it comes from choice",
+"Rest as Right, Not Reward: The final reframe",
+"Interdependence as Safety: A new relational template",
+"The Person You Were Underneath the Strategy"
+],
+journalingPrompts: [
+"Who would you be if your worth was completely unconditional?",
+"What would you do differently tomorrow if you knew that rest was non-negotiable — no
+"What has this course confirmed about you? What has surprised you?",
+"Write a letter from your future self — the one who has learned to rest — to your pre
+"What is one thing you want to carry forward? One thing you want to set down?"
+],
+reflectionExercises: [
+{
+name: "The Integration Inventory",
+desc: "Revisit each module. For each one: what shifted? What resistance remains? Wh
+},
+{
+name: "The Gift Restatement",
+desc: "Write a new description of your strengths — not as coping strategies, but as
+},
+{
+name: "The Rest Commitment",
+desc: "Write one concrete commitment to rest — not as a reward system, but as a non
+}
+],
+audioIdea: "Homecoming audio. A final guided meditation that brings together all the co
+embodimentPractice: "Full breath as homecoming. A complete breathing practice — not fun
+breakthrough: "The student who completes the course and says: 'I didn't know I was allo
+resistance: "The final resistance is often the quietest: 'What if I change and I lose w
+}
+],
+intent
+completionOutcomes: [
+"A visceral, body-level understanding of where this adaptation came from and why it made
+"The ability to recognize your stress loop at earlier stages — and to exit it with "A new relationship with rest — not as earned reward but as structural requirement",
+"Expanded emotional access — particularly to grief, vulnerability, and softness",
+"Greater capacity to receive care without deflecting, redirecting, or performing gratitud
+"Clearer ownership boundaries — knowing what is genuinely yours and what you have absorbe
+"Reduced resentment through honest naming and genuine load redistribution",
+"A somatic vocabulary for reading your body's signals before they become crises",
+"The beginning of intrinsic worth — value that is not conditional on function",
+"Your strengths expressed as chosen offerings rather than compulsive strategies"
+],
+healingMessage: "You do not have to hold everything together to be safe. The structure you
+};
+const moduleColors = {
+1: { bg: '#FBF7F2', accent: '#C8A882', text: '#5C4A32' },
+2: { bg: '#F4F7F4', accent: '#8B9E8A', text: '#2D4030' },
+3: { bg: '#F5F3F8', accent: '#9B8BAF', text: '#3D2E50' },
+4: { bg: '#F8F4F4', accent: '#B08888', text: '#4A2E2E' },
+5: { bg: '#F3F5F8', accent: '#7B8FA8', text: '#2A3545' },
+6: { bg: '#F3F6F6', accent: '#8A9E9E', text: '#2A3D3D' },
+7: { bg: '#F8F6F2', accent: '#B09B7A', text: '#4A3D28' },
+8: { bg: '#F4F8F4', accent: '#8BA88B', text: '#2A4030' },
+};
+const tabs = ["Overview", "Lessons", "Journal", "Exercises", "Practices", "Breakthroughs"];
+export default function StabilizerCourse() {
+const [activeModule, setActiveModule] = useState(null);
+const [activeTab, setActiveTab] = useState("Overview");
+const [showOutcomes, setShowOutcomes] = useState(false);
+const mod = activeModule !== null ? courseData.modules[activeModule] : null;
+const colors = activeModule !== null ? moduleColors[activeModule + 1] : null;
+return (
+<div style={{
+minHeight: '100vh',
+background: '#F7F4EF',
+fontFamily: "'Georgia', 'Times New Roman', serif",
+color: '#2C2417'
+}}>
+{/* Google Fonts */}
+<style>{`
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.course-title { font-family: 'Cormorant Garamond', serif; }
+.course-body { font-family: 'Jost', sans-serif; }
+.module-card {
+background: white;
+border-radius: 2px;
+padding: 28px 24px;
+cursor: pointer;
+transition: all 0.3s ease;
+border-left: 3px solid transparent;
+box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.module-card:hover {
+transform: translateX(4px);
+box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.tab-btn {
+background: none;
+border: none;
+cursor: pointer;
+font-family: 'Jost', sans-serif;
+font-size: 12px;
+font-weight: 500;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+padding: 8px 16px;
+border-radius: 1px;
+transition: all 0.2s ease;
+color: #888;
+}
+.tab-btn.active {
+color: white;
+}
+.tab-btn:hover { opacity: 0.8; }
+.prompt-card {
+background: rgba(255,255,255,0.6);
+border-radius: 2px;
+padding: 16px 20px;
+margin-bottom: 10px;
+border-left: 2px solid;
+font-family: 'Jost', sans-serif;
+font-size: 14px;
+line-height: 1.7;
+color: #3C3020;
+}
+.section-label {
+font-family: 'Jost', sans-serif;
+font-size: 10px;
+font-weight: 500;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+margin-bottom: 14px;
+}
+.divider {
+height: 1px;
+background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
+margin: 28px 0;
+}
+.outcome-item {
+background: white;
+border-radius: 2px;
+padding: 16px 20px;
+margin-bottom: 8px;
+display: flex;
+align-items: flex-start;
+gap: 14px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+font-family: 'Jost', sans-serif;
+font-size: 14px;
+line-height: 1.6;
+color: #3C3020;
+}
+.back-btn {
+background: none;
+border: 1px solid rgba(255,255,255,0.4);
+color: white;
+font-family: 'Jost', sans-serif;
+font-size: 11px;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+padding: 8px 16px;
+cursor: pointer;
+border-radius: 1px;
+transition: all 0.2s;
+}
+.back-btn:hover { background: rgba(255,255,255,0.15); }
+.belief-tag {
+display: inline-block;
+border: 1px solid;
+border-radius: 1px;
+padding: 4px 12px;
+font-family: 'Jost', sans-serif;
+font-size: 12px;
+margin: 4px;
+font-style: italic;
+}
+.exercise-card {
+background: rgba(255,255,255,0.55);
+border-radius: 2px;
+padding: 20px 22px;
+margin-bottom: 14px;
+}
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 2px; }
+`}</style>
+{/* Header */}
+<div style={{
+background: '#1C1710',
+color: 'white',
+padding: '60px 40px 50px',
+textAlign: 'center',
+position: 'relative',
+overflow: 'hidden'
+}}>
+<div style={{
+position: 'absolute', inset: 0,
+backgroundImage: 'radial-gradient(ellipse at 30% 50%, rgba(200,168,130,0.15) pointerEvents: 'none'
+}} />
+0%, tr
+<div className="course-body" style={{ fontSize: 11, letterSpacing: '0.22em', color: '
+The Regulation Blueprint™
+</div>
+<h1 className="course-title" style={{ fontSize: 52, fontWeight: 300, letterSpacing: '
+The Stabilizer
+</h1>
+<div className="course-title" style={{ fontSize: 20, fontWeight: 300, fontStyle: 'ita
+Type 01 — Complete Transformational Course
+</div>
+<div style={{ maxWidth: 580, margin: '0 auto' }}>
+<p className="course-body" style={{ fontSize: 15, lineHeight: 1.8, color: 'rgba(255
+"{courseData.tagline}"
+</p>
+</div>
+{/* Course stats */}
+<div style={{ display: 'flex', justifyContent: 'center', gap: 48, marginTop: 36 }}>
+{[['8', 'Modules'], ['40+', 'Prompts'], ['24+', 'Exercises'], ['8', 'Practices']].m
+<div key={label} style={{ textAlign: 'center' }}>
+<div className="course-title" style={{ fontSize: 28, fontWeight: 400, color: '#
+<div className="course-body" style={{ fontSize: 10, letterSpacing: '0.16em', te
+</div>
+))}
+</div>
+</div>
+{!mod ? (
+/* MAIN VIEW */
+<div style={{ maxWidth: 820, margin: '0 auto', padding: '48px 24px' }}>
+{/* Healing Message */}
+<div style={{
+background: 'white',
+borderRadius: 2,
+padding: '32px 36px',
+marginBottom: 40,
+boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
+borderTop: '3px solid #C8A882'
+}}>
+<div className="section-label" style={{ color: '#C8A882' }}>Core Healing Message<
+<p className="course-title" style={{ fontSize: 19, lineHeight: 1.75, color: '#3C2
+"{courseData.healingMessage}"
+</p>
+</div>
+{/* Module Grid */}
+<div className="section-label" style={{ color: '#888', marginBottom: 20 }}>Course C
+<div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 48 }
+{courseData.modules.map((m, i) => {
+const c = moduleColors[i + 1];
+return (
+<div
+key={m.id}
+className="module-card"
+style={{ borderLeftColor: c.accent }}
+onClick={() => { setActiveModule(i); setActiveTab("Overview"); }}
+>
+<div style={{ display: 'flex', alignItems: 'flex-start', gap: 20 }}>
+<div style={{
+width: 44, height: 44, borderRadius: '50%',
+background: c.bg, display: 'flex', alignItems: 'center', justifyContent
+fontSize: 18, color: c.accent, flexShrink: 0, border: `1px solid ${c.ac
+}}>
+{m.icon}
+</div>
+<div style={{ flex: 1 }}>
+<div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBot
+<span className="course-body" style={{ fontSize: 10, letterSpacing: '
+Module {m.id} · {m.theme}
+</span>
+</div>
+<h3 className="course-title" style={{ fontSize: 22, fontWeight: 500, co
+{m.title}
+</h3>
+<p className="course-body" style={{ fontSize: 13, color: '#888', margin
+{m.subtitle}
+</p>
+<p className="course-body" style={{ fontSize: 13, color: '#555', {m.description}
+</p>
+</div>
+<div className="course-body" style={{ fontSize: 20, color: '#ccc', </div>
+</div>
+lineHe
+flexSh
+);
+})}
+</div>
+{/* Completion Outcomes */}
+<div>
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-betwe
+<div className="section-label" style={{ color: '#888' }}>Transformation Outcome
+<button
+onClick={() => setShowOutcomes(!showOutcomes)}
+style={{ background: 'none', border: '1px solid #ddd', padding: '6px 14px', c
+>
+{showOutcomes ? 'Collapse' : 'Expand'}
+</button>
+</div>
+{showOutcomes && (
+<div style={{ marginBottom: 32 }}>
+{courseData.completionOutcomes.map((o, i) => (
+<div key={i} className="outcome-item">
+<span style={{ color: '#C8A882', fontSize: 16, flexShrink: 0, marginTop:
+<span>{o}</span>
+</div>
+))}
+</div>
+)}
+</div>
+</div>
+) : (
+/* MODULE DETAIL VIEW */
+<div>
+{/* Module Header */}
+<div style={{
+background: colors.accent,
+padding: '36px 40px',
+color: 'white'
+}}>
+<div style={{ maxWidth: 820, margin: '0 auto' }}>
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-bet
+<button className="back-btn" onClick={() => setActiveModule(null)}>
+← All Modules
+</button>
+<span className="course-body" style={{ fontSize: 11, letterSpacing: '0.16em',
+Module {mod.id} of {courseData.modules.length}
+</span>
+</div>
+<div className="course-body" style={{ fontSize: 11, letterSpacing: '0.18em', te
+{mod.theme}
+</div>
+<h2 className="course-title" style={{ fontSize: 38, fontWeight: 300, marginBott
+{mod.title}
+</h2>
+<p className="course-title" style={{ fontSize: 17, fontStyle: 'italic', color:
+{mod.subtitle}
+</p>
+<p className="course-body" style={{ fontSize: 14, lineHeight: 1.75, color: 'rgb
+{mod.description}
+</p>
+</div>
+</div>
+'stick
+'flex'
+{/* Tabs */}
+<div style={{ background: 'white', borderBottom: '1px solid #eee', position: <div style={{ maxWidth: 820, margin: '0 auto', padding: '0 24px', display: {tabs.map(t => (
+<button
+key={t}
+className={`tab-btn ${activeTab === t ? 'active' : ''}`}
+style={{ background: activeTab === t ? colors.accent : 'none', color: activ
+onClick={() => setActiveTab(t)}
+>
+{t}
+</button>
+))}
+</div>
+</div>
+{/* Tab Content */}
+<div style={{ maxWidth: 820, margin: '0 auto', padding: '36px 24px' }}>
+{activeTab === "Overview" && (
+<div>
+{/* Core Wound / Fear */}
+<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, margi
+{[
+{ label: 'Core Wound', content: mod.coreWound, icon: '◌' },
+{ label: 'Core Fear', content: mod.coreFear, icon: '◎' }
+].map(item => (
+<div key={item.label} style={{
+background: colors.bg,
+borderRadius: 2, padding: '20px 22px',
+border: `1px solid ${colors.accent}25`
+}}>
+<div className="section-label" style={{ color: colors.accent }}>{item.l
+<p className="course-title" style={{ fontSize: 16, fontStyle: 'italic',
+"{item.content}"
+</p>
+</div>
+))}
+</div>
+{/* Core Beliefs */}
+<div style={{ marginBottom: 28 }}>
+<div className="section-label" style={{ color: '#888' }}>Core Beliefs Activ
+<div>
+{mod.coreBeliefs.map((b, i) => (
+<span key={i} className="belief-tag" style={{ borderColor: `${colors.ac
+"{b}"
+</span>
+))}
+</div>
+</div>
+<div className="divider" />
+{/* Developmental Context */}
+<div style={{ marginBottom: 28 }}>
+<div className="section-label" style={{ color: '#888' }}>Developmental Cont
+<p className="course-body" style={{ fontSize: 14, lineHeight: 1.8, color: '
+{mod.developmentalContext}
+</p>
+</div>
+{/* Navigation */}
+<div style={{ display: 'flex', gap: 10, marginTop: 32 }}>
+{activeModule > 0 && (
+<button onClick={() => { setActiveModule(activeModule - 1); setActiveTab(
+style={{ background: 'none', border: '1px solid #ddd', padding: '10px 2
+← Previous Module
+</button>
+)}
+{activeModule < courseData.modules.length - 1 && (
+<button onClick={() => { setActiveModule(activeModule + 1); setActiveTab(
+style={{ background: colors.accent, border: 'none', padding: '10px 20px
+Next Module →
+</button>
+)}
+</div>
+</div>
+)}
+{activeTab === "Lessons" && (
+<div>
+<div className="section-label" style={{ color: '#888' }}>Module Lessons</div>
+{mod.lessons.map((l, i) => (
+<div key={i} style={{
+display: 'flex', alignItems: 'flex-start', gap: 16,
+background: 'white', borderRadius: 2, padding: '18px 22px',
+marginBottom: 10, boxShadow: '0 1px 4px rgba(0,0,0,0.05)',
+border: `1px solid ${colors.accent}18`
+}}>
+<div style={{
+width: 28, height: 28, borderRadius: '50%',
+background: colors.bg, display: 'flex', alignItems: 'center', justifyCo
+fontSize: 12, fontFamily: 'Jost, sans-serif', fontWeight: 500, color: c
+flexShrink: 0, border: `1px solid ${colors.accent}40`
+}}>
+{i + 1}
+</div>
+<p className="course-body" style={{ fontSize: 15, color: '#3C3020', lineH
+</div>
+))}
+<div className="divider" />
+<div className="section-label" style={{ color: '#888' }}>Guided Audio Concept
+<div style={{
+background: colors.bg, borderRadius: 2, padding: '22px 24px',
+border: `1px solid ${colors.accent}30`, marginBottom: 20
+}}>
+<div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+<span style={{ fontSize: 22, color: colors.accent }}>♪</span>
+<p className="course-body" style={{ fontSize: 14, lineHeight: 1.75, color
+{mod.audioIdea}
+</p>
+</div>
+</div>
+</div>
+)}
+<div className="section-label" style={{ color: '#888' }}>Journaling Prompts</
+<p className="course-body" style={{ fontSize: 13, color: '#888', marginBottom
+These prompts are invitations, not assignments. Choose the ones that pull a
+{activeTab === "Journal" && (
+<div>
+</p>
+{mod.journalingPrompts.map((p, i) => (
+<div key={i} className="prompt-card" style={{ borderLeftColor: colors.accen
+<span style={{ color: colors.accent, fontWeight: 600, marginRight: 8 }}>{
+{p}
+</div>
+))}
+</div>
+)}
+{activeTab === "Exercises" && (
+<div>
+<div className="section-label" style={{ color: '#888' }}>Reflection Exercises
+{mod.reflectionExercises.map((e, i) => (
+<div key={i} className="exercise-card" style={{ background: colors.bg, bord
+<div style={{ display: 'flex', gap: 12, marginBottom: 10 }}>
+<span style={{ color: colors.accent, fontSize: 18 }}>{mod.icon}</span>
+<h4 className="course-title" style={{ fontSize: 18, fontWeight: 500, co
+</div>
+<p className="course-body" style={{ fontSize: 14, lineHeight: 1.75, color
+</div>
+))}
+</div>
+)}
+{activeTab === "Practices" && (
+<div>
+<div className="section-label" style={{ color: '#888' }}>Embodiment Practice<
+<div style={{
+background: colors.bg,
+borderRadius: 2, padding: '24px 26px',
+border: `1px solid ${colors.accent}30`, marginBottom: 28
+}}>
+<div className="course-body" style={{ fontSize: 10, letterSpacing: '0.16em'
+Somatic Practice for This Module
+</div>
+<p className="course-body" style={{ fontSize: 15, lineHeight: 1.8, color: c
+{mod.embodimentPractice}
+</p>
+</div>
+<div className="divider" />
+<div className="section-label" style={{ color: '#888' }}>Guided Audio</div>
+<div style={{
+background: '#1C1710', color: 'white',
+borderRadius: 2, padding: '24px 26px', marginBottom: 28
+}}>
+<div className="course-body" style={{ fontSize: 10, letterSpacing: '0.16em'
+Audio Concept
+</div>
+<p className="course-body" style={{ fontSize: 14, lineHeight: 1.8, color: '
+{mod.audioIdea}
+</p>
+</div>
+</div>
+)}
+{activeTab === "Breakthroughs" && (
+<div>
+<div className="section-label" style={{ color: '#888' }}>Common Student Break
+<div style={{
+background: colors.bg,
+borderRadius: 2, padding: '24px 26px',
+border: `1px solid ${colors.accent}30`, marginBottom: 24
+}}>
+<div style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
+<span style={{ fontSize: 24, color: colors.accent, flexShrink: 0 }}>◈</sp
+<div>
+<div className="course-body" style={{ fontSize: 10, letterSpacing: '0.1
+Breakthrough Moment
+</div>
+<p className="course-body" style={{ fontSize: 15, lineHeight: 1.8, colo
+{mod.breakthrough}
+</p>
+</div>
+</div>
+</div>
+<div className="section-label" style={{ color: '#888' }}>Common Resistance Pa
+<div style={{
+background: '#FBF8F5',
+borderRadius: 2, padding: '24px 26px',
+border: '1px solid rgba(0,0,0,0.08)', marginBottom: 28
+}}>
+<div style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
+<span style={{ fontSize: 24, color: '#B8A090', flexShrink: 0 }}>◌</span>
+<div>
+<div className="course-body" style={{ fontSize: 10, letterSpacing: '0.1
+Resistance Pattern & Guidance
+</div>
+<p className="course-body" style={{ fontSize: 15, lineHeight: 1.8, colo
+{mod.resistance}
+</p>
+</div>
+</div>
+</div>
+</div>
+)}
+</div>
+</div>
+)}
+{/* Footer */}
+<div style={{
+background: '#1C1710', color: 'rgba(255,255,255,0.4)',
+padding: '28px 40px', textAlign: 'center', marginTop: 20
+}}>
+<p className="course-body" style={{ fontSize: 11, letterSpacing: '0.16em', textTransf
+The Regulation Blueprint™ · Type 01: The Stabilizer · Transformational Course
+</p>
+</div>
+</div>
+);
+}
